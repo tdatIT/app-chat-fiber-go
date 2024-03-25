@@ -1,0 +1,27 @@
+AppConfig:
+  Debug: true
+  BaseURL: http://localhost:5000
+  SecretKey: 94937498324
+  Database:
+    MongoDB:
+      URI: mongodb://localhost:27017
+      Database: be_chat_app_db
+      ConnectionTimeout: 5
+      Timeout: 5
+      MaxConnIdleTime: 5
+  RestAPI:
+    ReadTimeout: 5
+    WriteTimeout: 5
+    Port: :5000
+    Mode: local
+    SSL: false
+    CtxDefaultTimeout: 5
+    ExpirationLimitTime: 30
+  Websocket:
+    Port: :5000
+    ReadBufferSize: 1024
+    WriteBufferSize: 1024
+    WriteWait: 10
+    PongWait: 60
+    PingPeriod: 54
+    MaxMessageSize: 512
